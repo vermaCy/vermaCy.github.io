@@ -1,0 +1,23 @@
+/* Nuke default browser margins and paddings */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d1117; /* Solid dark background everywhere */
+  color: #c9d1d9;
+  font-family: 'Courier New', Courier, monospace; /* Hacker aesthetic */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sure the React root takes up the full width */
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
