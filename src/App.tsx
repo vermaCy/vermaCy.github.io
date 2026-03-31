@@ -72,6 +72,8 @@ function App() {
         <div className="hero-content">
           <h1>UJOP Kolej Challenge</h1>
           <p>
+            Hello! I am glad you came here..
+            <br /> <br />
             This challenge is only for people from UJOP Dormitory, precisely this one. 
             
           </p>
@@ -83,7 +85,15 @@ function App() {
 
         <p>
           <br /> <br /> <br />
-          Solve the clues, find the keys, and unlock the episodes.</p>
+          Solve the clues, find the keys, and unlock the episodes..
+          <br /> <br />
+          It shouldn't be difficult but I hope at least it's gonna be fun.
+          <br /><br /> <br />
+          By the way, don't tell anyone the keys, let them try themselves 🤫
+          <br /><br /> <br />
+          Your journey begins here. Let's start with an easy one, then level up 📈 
+
+          </p>
       </header>
 
       {/* Grid of Levels */}
