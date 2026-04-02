@@ -1,0 +1,89 @@
+/* General Layout based on index.html */
+.wiki-container {
+  font-family: sans-serif;
+  background-color: #f8f9fa; /* Light grey outside the article */
+  color: #202122; /* Standard Wikipedia near-black text */
+  min-height: 100vh;
+}
+
+/* Header bar with high contrast */
+.wiki-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #a7d7f9;
+}
+
+.wiki-user-tools {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #0645ad; /* Wikipedia Blue */
+}
+
+/* Main content wrapper */
+.wiki-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff; /* Force pure white background for readability */
+  border: 1px solid #a2a9b1;
+  border-top: none;
+}
+
+.wiki-sidebar {
+  width: 160px;
+  padding: 20px 10px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #a2a9b1;
+  font-size: 0.75rem;
+}
+
+.wiki-main {
+  flex: 1;
+  padding: 20px 40px;
+  background-color: #ffffff;
+}
+
+.wiki-article-header {
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 1em;
+}
+
+.wiki-title {
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  font-size: 1.8rem;
+  color: #000000; /* Pure black for titles */
+  margin: 0;
+}
+
+/* CRITICAL: Fix for the grey/unreadable API content */
+.wiki-content {
+  line-height: 1.6;
+  font-size: 0.875rem;
+  color: #202122 !important; /* Force readable text color */
+}
+
+/* This targets the specific classes Wikipedia's API injects */
+.wiki-content .mw-parser-output {
+  color: #202122 !important;
+}
+
+.wiki-content a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.wiki-content a:hover {
+  text-decoration: underline;
+}
+
+/* Fix for any tables or boxes that come in as grey */
+.wiki-content table, .wiki-content .infobox {
+  background-color: #f8f9fa !important;
+  border: 1px solid #a2a9b1 !important;
+  color: #202122 !important;
+}

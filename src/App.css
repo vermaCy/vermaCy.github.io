@@ -196,3 +196,33 @@ button:hover { background: #b80710; }
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
+
+.wiki-inline-link {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 14px 12px;
+  background: rgba(54, 133, 227, 0.1); /* Subtle blue glow */
+  color: #3685e3;
+  text-decoration: none;
+  border: 1px solid #3685e3;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wiki-inline-link:hover {
+  background: #3685e3;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(54, 133, 227, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Optional: add a small icon effect before the text */
+.wiki-inline-link::before {
+  content: "📖";
+  margin-right: 6px;
+  filter: grayscale(1);
+}

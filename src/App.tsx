@@ -94,6 +94,7 @@ function App() {
           Your journey begins here. Let's start with an easy one, then level up 📈 
 
           </p>
+          <a href="/wiki" className="wiki-inline-link">Here's a Wikipedia article about our suspect</a>
       </header>
 
       {/* Grid of Levels */}
